@@ -20,7 +20,7 @@ public class Main {
                 System.out.println("Это некорректное значение для подсчёта, количество гостей должно быть >1 . Введите значение ");
             }
         }
-        Calc calculator = new Calc(friends); //
+
 
         while (true){
             System.out.println("Введите название товара");
@@ -31,14 +31,18 @@ public class Main {
 
             calc.addItem(new Item(productName, stoimost)); //добавим товар.
 
-            System.out.println("Товар успешно добавлен");
+
             System.out.println("Добавить ещё один товар? Введите 'Завершить' если больше нет товаров для добавления");
 
             String question = scanner.next();
-            String answer = new String ("Завершить");;
+
+            String answer = new String ("Завершить");
+
             if (question == answer) {
                 break;
             }
         }
+
+        Calc calculator = new Calc(friends); //
     }
 }
