@@ -9,7 +9,6 @@ public class Main {
         int friends;
         while (true) { // Запускаем бесконечный цикл
             friends = scanner.nextInt(); //Получаем кол-во гостей от пользователя
-
             if (friends > 1) {
                 System.out.println(friends + " Гостей");
                 return friends;
@@ -23,7 +22,6 @@ public class Main {
             }
         }
 
-
         while (true){
             System.out.println("Введите название товара");
             String productName = scanner.next();
@@ -36,23 +34,18 @@ public class Main {
 
             System.out.println("Добавить ещё один товар? Введите 'Завершить' если больше нет товаров для добавления");
 
-            String question = scanner.next();
-
-            String answer = new String ("Завершить");
             //https://proglang.su/java/strings-equalsignorecase
             //retVal = Str1.equalsIgnoreCase(Str2);
-
+            String question = scanner.next();
+            String answer = new String ("Завершить");
             if (question.equalsIgnoreCase(answer) == true) {
                 break;
             }
         }
-        double check = 0;
-        check = check + Item.stoimost;
-        String pokupki = "Добавленные товары:";
-        pokupki = pokupki + "\n" + Item.productName;
-        System.out.println(pokupki); //После добавления товара в калькулятор нужно показать пользователю сообщение об успешном добавлении товара.
-
         double itog = check / friends;
-        Standart standart = new Standart();
+
+        // Классы и объекты Задача 5/5 стр9 Converter dengi = new Converter();
+        Standart standart = new Standart();// Вызов конструктора с параметрами
+
     }
 }
