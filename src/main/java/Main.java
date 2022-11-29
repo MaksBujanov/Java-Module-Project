@@ -48,9 +48,11 @@ public class Main {
         }
         double check = 0;
         check = check + Item.stoimost;
+        String pokupki = "Добавленные товары:";
+        pokupki = pokupki + "\n" + Item.productName;
+        System.out.println(pokupki); //После добавления товара в калькулятор нужно показать пользователю сообщение об успешном добавлении товара.
 
         double itog = check / friends;
-
-
+        Standart standart = new Standart();
     }
 }
