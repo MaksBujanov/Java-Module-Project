@@ -1,15 +1,29 @@
-public class padeg {
-    double okruglenie = Math.floor( );
+public class padeg<stoimost> { //автоисправление добавило параметр стоимость. стр1
+    private double stoimost;//автоисправление. узнать что такое private стр 2
+    double okruglenie = Math.floor(stoimost);
     if (okruglenie == 1){
         String rubl = "рубль";
         return rubl;
-    } else if (okruglenie == 2 or okruglenie == 3 or okruglenie == 4){ // посмотреть как пишется или
+    } else if (okruglenie == 2 || okruglenie == 3 || okruglenie == 4){
         String rubl = "рубля";
         return rubl;
     } else {
         String rubl = "рублей";
         return rubl;
     }
+
+    String messageTemplate = "%.2f";
+    String.format(messageTemplate, stoimost);
+    //String messageTemplate = "Меня зовут %s, мне %d года.";
+    //System.out.println(String.format(messageTemplate, name1, age1));
+
+    // Вывод суммы, которую должен заплатить каждый человек, должен быть в формате "10.45".
+    // Дробная часть не должна содержать больше двух чисел после запятой.
+    //Сумма считается в рублях. Ваша задача — обработать правильный вывод. Если сумма 1.45,
+    //то вы должны вывести "1.45 рубль", а если сумма будет 3.20 или 4.00,
+    //вы должны вывести 3.20 рубля и 4.00 рубля.
+    // Окончания в слове "рубль" должны зависеть от целочисленной части.
+
 }
 //https://proglang.su/java/numbers-floor
 //float f1 = -0.4f;
