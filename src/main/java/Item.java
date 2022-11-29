@@ -5,5 +5,6 @@ public class Item {
     Item(String productName, double stoimost) {
         this.productName = productName;
         this.stoimost = stoimost;
+    }
 }
 

@@ -11,11 +11,9 @@ public class padeg<stoimost> { //автоисправление добавило
         String rubl = "рублей";
         return rubl;
     }
-
-    String messageTemplate = "%.2f";
-    String.format(messageTemplate, stoimost);
-    //String messageTemplate = "Меня зовут %s, мне %d года.";
-    //System.out.println(String.format(messageTemplate, name1, age1));
+    String.format("%.2f", result);
+    //String messageTemplate = "%.2f";
+    //String.format(messageTemplate, stoimost);
 
     // Вывод суммы, которую должен заплатить каждый человек, должен быть в формате "10.45".
     // Дробная часть не должна содержать больше двух чисел после запятой.
