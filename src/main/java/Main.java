@@ -26,7 +26,7 @@ public class Main {
             System.out.println("Введите стоимость товара. Она должна быть в формате рубли.копейки, например 10.45 или 11.40.");
             double stoimost = scanner.nextDouble();//Double т.к. формат рубли.копейки
 
-            сalc.addItem(new Item(productName, stoimost)); //создадим товар и применим к нему метод addItem класса Calc
+            Сalc.addItem(new Item(productName, stoimost)); //создадим товар и применим к нему метод addItem класса Calc
             System.out.println("Добавить ещё один товар? Введите 'Завершить' если больше нет товаров для добавления");
 
             if (scanner.next().equalsIgnoreCase("Завершить")) {// Сравниваем что ввел пользователь с ключевым словом Завершить без учета регистра

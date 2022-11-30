@@ -1,13 +1,13 @@
 public class Calc {
     public static String pokupki;
-    double check = 0;
+    static double check = 0; //автоисправление узнать что такое static
     // dengi.convert(moneyBeforeSalary, currency); // Вызовите метод класса Converter
     void addItem(double stoimost, String productName){ //Передали атрибуты из Item
         check = check + stoimost;
         String pokupki = "Добавленные товары:"+ "\n" + productName;
         System.out.println(pokupki);
     }
-    public double getCheck( ) {
+    public static double getCheck( ) { //автоисправление узнать что такое static
         return check;
     }
 }
