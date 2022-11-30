@@ -7,7 +7,7 @@ public class Calc {
         String pokupki = "Добавленные товары:"+ "\n" + productName;
         System.out.println(pokupki);
     }
-    public double getCheck() {
+    public double getCheck( ) {
         return check;
     }
 }
