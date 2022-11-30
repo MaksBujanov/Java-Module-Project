@@ -29,23 +29,25 @@ public class Main {
             System.out.println("Введите стоимость товара. Она должна быть в формате рубли.копейки, например 10.45 или 11.40.");
             double stoimost = scanner.nextDouble();//Double т.к. формат рубли.копейки
 
-            Calc.addItem(new Item(productName, stoimost)); //добавим товар.
-
+            Calc.addItem(new Item(productName, stoimost)); //создадим товар и применим к нему метод addItem класса Calc
 
             System.out.println("Добавить ещё один товар? Введите 'Завершить' если больше нет товаров для добавления");
 
             //https://proglang.su/java/strings-equalsignorecase
             //retVal = Str1.equalsIgnoreCase(Str2);
-            String question = scanner.next();
-            String answer = new String ("Завершить");
-            if (question.equalsIgnoreCase(answer) == true) {
+            // Сравниваем что ввел пользователь с ключевым словом Завершить без учета регистра
+
+            if (scanner.next().equalsIgnoreCase("Завершить")) {
                 break;
             }
         }
-        double itog = check / friends;
+        double check = Calc.getCheck();// получили общий чек с покупок
+        double itog = check / friends; // делим чек на всех друзей
 
         // Классы и объекты Задача 5/5 стр9 Converter dengi = new Converter();
         Standart standart = new Standart();// Вызов конструктора с параметрами
 
+        System.out.println(Calc.pokupki);
+        System.out.println("к оплате:" + standart.round(itog) + standart.padeg(itog));
     }
 }

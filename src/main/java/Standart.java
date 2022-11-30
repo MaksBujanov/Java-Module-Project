@@ -1,17 +1,21 @@
-public class padeg<stoimost> { //автоисправление добавило параметр стоимость. стр1
-    private double stoimost;//автоисправление. узнать что такое private стр 2
-    double okruglenie = Math.floor(stoimost);
-    if (okruglenie == 1){
-        String rubl = "рубль";
-        return rubl;
-    } else if (okruglenie == 2 || okruglenie == 3 || okruglenie == 4){
-        String rubl = "рубля";
-        return rubl;
-    } else {
-        String rubl = "рублей";
-        return rubl;
+public class Standart {
+    String padeg (double stoimost){
+        double padeg = Math.floor(stoimost);
+        if (padeg == 1){
+            String rubl = "рубль";
+            return rubl;
+        } else if (padeg == 2 || padeg == 3 || padeg == 4){
+            String rubl = "рубля";
+            return rubl;
+        } else {
+            String rubl = "рублей";
+            return rubl;
+        }
     }
-    String.format("%.2f", result);
+    String round(double itog){
+        return String.format("%.2f", itog);
+    }
+}
     //String messageTemplate = "%.2f";
     //String.format(messageTemplate, stoimost);
 
@@ -22,7 +26,6 @@ public class padeg<stoimost> { //автоисправление добавило
     //вы должны вывести 3.20 рубля и 4.00 рубля.
     // Окончания в слове "рубль" должны зависеть от целочисленной части.
 
-}
 //https://proglang.su/java/numbers-floor
 //float f1 = -0.4f;
 //    float f2 = -5.75f;
