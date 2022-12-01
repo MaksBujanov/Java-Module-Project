@@ -7,11 +7,11 @@ public class Item {
         this.stoimost = stoimost;
     }
 
-    public String productName() {
-        return productName;
-    }
-    public double getstoimost() {
-        return stoimost;
-    }
+    //public String productName() {
+   //     return productName;
+    //}
+   // public double getstoimost() {
+   //     return stoimost;
+   // }
 }
 

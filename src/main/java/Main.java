@@ -1,11 +1,11 @@
 import java.util.Scanner; // Добавили ввод с клавиатуры
 public class Main {
-    public static int main(String[] args) {
+    public static void main(String[] args) {
         // ваш код начнется здесь
         Scanner scanner;
         scanner = new Scanner(System.in);
         System.out.println("Введите на скольких человек необходимо разделить счёт");
-        int friends;
+        int friends = scanner.nextInt();
         while (true) { // Запускаем бесконечный цикл
             friends = scanner.nextInt(); //Получаем кол-во гостей от пользователя
             if (friends > 1) {
