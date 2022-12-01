@@ -7,12 +7,17 @@ public class Calc {
     static double check = 0; //автоисправление узнать что такое static
 
 
-    void addItem(String productName, double stoimost){ //Передали атрибуты из Item
-        check = check + stoimost;
-        String pokupki = "Добавленные товары:"+ "\n" + productName;
+    //void addItem(String productName, double stoimost){ //Передали атрибуты из Item
+    //    check = check + stoimost;
+    //    String pokupki = "Добавленные товары:"+ "\n" + productName;
+    //    System.out.println(pokupki);
+    //}
+    void addItem(Item item){ //Передали атрибуты из Item
+        check = check + item.stoimost;
+        String pokupki = "Добавленные товары:"+ "\n" + item.productName;
         System.out.println(pokupki);
-
     }
+
     public static double getCheck( ) { //автоисправление узнать что такое static
         return check;
     }
