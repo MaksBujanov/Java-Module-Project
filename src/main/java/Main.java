@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner;
         scanner = new Scanner(System.in);
         System.out.println("Введите на скольких человек необходимо разделить счёт");
-        int friends = scanner.nextInt();
+        int friends ;
         while (true) { // Запускаем бесконечный цикл
             friends = scanner.nextInt(); //Получаем кол-во гостей от пользователя
             if (friends > 1) {
