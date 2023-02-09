@@ -2,12 +2,12 @@ public class Standart {
     String padeg (double stoimost){
         double padeg = Math.floor(stoimost);
         // доработка замечание 3: склонение. анализируем остатокот деления
-        if (padeg  % 2 == 1 || padeg % 10 == 1){
+        if ( (( padeg <= 5)&&(padeg <= 20))  || padeg % 10 == 0){
+            return " рублей";
+        }  else if (padeg  == 1 || padeg % 10 == 1){
             return " рубль";
         } else if (padeg == 2 || padeg % 10 == 2 || padeg == 3 || padeg % 10 == 3 || padeg == 4 || padeg % 10 == 4){
             return " рубля";
-        } else if (padeg % 10 == 0){
-            return " рублей";
         }
         else {
             return " рублей";
