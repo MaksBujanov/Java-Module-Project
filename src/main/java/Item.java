@@ -8,10 +8,9 @@ public class Item {
     }
 
     //public String productName() {
-   //     return productName;
+    //     return productName;
     //}
-   // public double getstoimost() {
-   //     return stoimost;
-   // }
+    // public double getstoimost() {
+    //     return stoimost;
+    // }
 }
-
