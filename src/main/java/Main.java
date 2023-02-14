@@ -11,7 +11,6 @@ public class Main {
             //проверка на корректный ввод количества людей: 1.нечисловой ввод 2.дробное число
             if (scanner.hasNextInt()) {
                 friends = scanner.nextInt(); //Получаем кол-во гостей от пользователя
-                System.out.println("Хорошо");
             }else {
                 System.out.println("Ошибка!!!Допустим ввод только целых чисел");
                 scanner.next();
